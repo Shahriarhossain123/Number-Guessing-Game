@@ -1,0 +1,27 @@
+apps_name = Number Gressing Game
+
+play_button = Play
+info_button = Info
+quit_button = Quit
+back_button = Back
+set_button = Set
+gress_button = Gress 
+
+player_vs_player = Player Vs Player
+player_vs_app = Player Vs App
+
+player_vs_app_title = Just guess a random number between 1 and 100.
+player_vs_player_title_set = You will be given a number to givess.
+player_vs_player_title_get = Gress the number that first player given.
+
+more_move = more move
+too_low_number = The number is too low.
+low_number = The number is low.
+too_high_number = The number is too hight.
+high_number = The number is hight.
+
+player_vs_app_help = The app is going to randomly select an integer from 1 to 100. You'll keep guessing numbers until you find the app's number, and the app will tell you each time if your guess was too high or too low. but the catch is that you only have 10 tries to guess the correct number!
+
+player_vs_player_help = One player is going to randomly select an integer from 1 to 100. You'll keep guessing numbers until you find the player's number, and the app will tell you each time if your guess was too high or too low. but the catch is that you only have 10 tries to guess the correct number!
+
+info = The app or player is going to randomly select an integer from 1 to 100. You’ll keep guessing numbers until you find the app’s or player’s number and the app will tell you each time if your guess was too high or too low. but the the catch is that you only have 10 tries to guess the correct number!
