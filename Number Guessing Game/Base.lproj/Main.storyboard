@@ -270,6 +270,7 @@
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                 <state key="normal" title="Back" backgroundImage="back_button"/>
                                 <connections>
+                                    <action selector="backButtonAction:" destination="TS3-Y5-9IP" eventType="touchUpInside" id="Euj-A2-uAr"/>
                                     <action selector="backButtonAction:" destination="fJs-Jn-aYD" eventType="touchUpInside" id="f0x-8B-knf"/>
                                 </connections>
                             </button>
@@ -277,6 +278,9 @@
                                 <rect key="frame" x="344" y="65" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="help"/>
+                                <connections>
+                                    <action selector="helpButtonAction:" destination="TS3-Y5-9IP" eventType="touchUpInside" id="YHX-sz-pd8"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player Vs App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvP-ZW-i4t">
                                 <rect key="frame" x="115" y="120" width="161" height="27"/>
@@ -293,28 +297,31 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10 More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7g-To-cuT">
-                                <rect key="frame" x="158" y="323" width="53" height="16"/>
+                                <rect key="frame" x="168" y="317" width="53" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NDM-lg-yqb">
-                                <rect key="frame" x="135" y="203" width="100" height="40"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NDM-lg-yqb">
+                                <rect key="frame" x="145" y="203" width="100" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0br-wm-5LC">
-                                <rect key="frame" x="135" y="263" width="100" height="50"/>
+                                <rect key="frame" x="145" y="257" width="100" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="14"/>
                                 <state key="normal" title="Gress" backgroundImage="gress_button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="gressButtonAction:" destination="TS3-Y5-9IP" eventType="touchUpInside" id="bi3-lw-X7I"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10 More" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pdg-LB-7EK">
-                                <rect key="frame" x="159" y="359" width="53" height="16"/>
+                                <rect key="frame" x="169" y="353" width="53" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="14"/>
                                 <nil key="textColor"/>
@@ -324,6 +331,16 @@
                         <viewLayoutGuide key="safeArea" id="ORF-yo-lqR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="62t-Hc-bcA" id="dr3-wB-3fN"/>
+                        <outlet property="gressButton" destination="0br-wm-5LC" id="Lyc-UL-xI0"/>
+                        <outlet property="helpButton" destination="I7I-5M-Gyw" id="RG6-Cm-3NY"/>
+                        <outlet property="hintLabel" destination="Pdg-LB-7EK" id="cy0-91-m5F"/>
+                        <outlet property="infoLabel" destination="nIa-fB-SJQ" id="X0D-lE-40S"/>
+                        <outlet property="moveLabel" destination="E7g-To-cuT" id="24H-dE-bxv"/>
+                        <outlet property="playerVappTitleLabel" destination="fvP-ZW-i4t" id="9XG-rN-VgP"/>
+                        <outlet property="setnumberTextField" destination="NDM-lg-yqb" id="1hm-L6-Jm3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XAz-S5-KJb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
