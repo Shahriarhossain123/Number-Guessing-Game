@@ -24,6 +24,8 @@
 		FA9B21FC2621848100D7F863 /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9B21FB2621848100D7F863 /* LocalizationSystem.swift */; };
 		FA9B2201262184BB00D7F863 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9B2200262184BB00D7F863 /* Colors.swift */; };
 		FAA39C4B261D81D900B12EC9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA39C4A261D81D900B12EC9 /* HomeVC.swift */; };
+		FAF61A152628A3CC007C3120 /* HintTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF61A132628A3CC007C3120 /* HintTitleTableViewCell.swift */; };
+		FAF61A162628A3CC007C3120 /* HintTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF61A142628A3CC007C3120 /* HintTitleTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		FA9B21FB2621848100D7F863 /* LocalizationSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
 		FA9B2200262184BB00D7F863 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FAA39C4A261D81D900B12EC9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FAF61A132628A3CC007C3120 /* HintTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintTitleTableViewCell.swift; sourceTree = "<group>"; };
+		FAF61A142628A3CC007C3120 /* HintTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HintTitleTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,8 @@
 		FAA39C2F261D76FB00B12EC9 /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
+				FAF61A132628A3CC007C3120 /* HintTitleTableViewCell.swift */,
+				FAF61A142628A3CC007C3120 /* HintTitleTableViewCell.xib */,
 			);
 			path = CustomControls;
 			sourceTree = "<group>";
@@ -293,6 +299,7 @@
 				FA3F471C260A060D00A81B9D /* LaunchScreen.storyboard in Resources */,
 				FA3F4719260A060D00A81B9D /* Assets.xcassets in Resources */,
 				FA3F4714260A060C00A81B9D /* Main.storyboard in Resources */,
+				FAF61A162628A3CC007C3120 /* HintTitleTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +327,7 @@
 				FA3F4711260A060C00A81B9D /* ViewController.swift in Sources */,
 				FA9B2201262184BB00D7F863 /* Colors.swift in Sources */,
 				FA3C2A0A26231EFC00F7AB13 /* PlayerVsAppVC.swift in Sources */,
+				FAF61A152628A3CC007C3120 /* HintTitleTableViewCell.swift in Sources */,
 				FA9B21E62620925000D7F863 /* LevelVC.swift in Sources */,
 				FA9B21F42621844400D7F863 /* Strings.swift in Sources */,
 				FAA39C4B261D81D900B12EC9 /* HomeVC.swift in Sources */,

@@ -40,6 +40,7 @@ struct Strings{
     static let won = "You WON the game"
     static let lose = "You LOSE the game"
     static let bad_guess = "Bad Guess"
+    static let donot_continue = "You do not wanna continue this game"
     
     static let player_vs_app_help = "The app is going to randomly select an integer from 1 to 100. You'll keep guessing numbers until you find the app's number, and the app will tell you each time if your guess was too high or too low. but the catch is that you only have 10 tries to guess the correct number!"
     

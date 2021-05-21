@@ -9,7 +9,7 @@ import UIKit
 
 
 class HomeVC: UIViewController {
-    
+    // MARK: - Outlet
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var playButton: UIButton!
@@ -23,6 +23,8 @@ class HomeVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // MARK: - Function
+    //This function use of some view outlet content
     func ViewOutletDesign(){
         //Button title label
         playButton.titleLabel?.text = Strings.play_button
@@ -35,6 +37,7 @@ class HomeVC: UIViewController {
         quitButton.titleLabel?.textColor = .white
     }
     
+    // MARK: - Button
     @IBAction func playButtonAction(_ sender: UIButton) {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let levelVC = storyboard.instantiateViewController(withIdentifier: "LevelVC") as! LevelVC

@@ -8,6 +8,7 @@
 import UIKit
 
 class InfoVC: UIViewController {
+    // MARK: - Outlet
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var infoTitleLabel: UILabel!
     @IBOutlet weak var backgroundImageView: UIImageView!
@@ -18,6 +19,8 @@ class InfoVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // MARK: - Function
+    //This function use of some view outlet content
     func infoViewOutletDesign(){
         //Button title label
         backButton.titleLabel?.text = Strings.back_button
@@ -32,6 +35,7 @@ class InfoVC: UIViewController {
         
     }
     
+    // MARK: - Button
     @IBAction func backButtonAction(_ sender: UIButton) {
         self.dismiss(animated: true)
     }
